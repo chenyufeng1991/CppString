@@ -48,18 +48,15 @@ int main(int argc, const char * argv[])
     stringEraseOrigin.erase();
     cout << "stringEraseOrigin = " << stringEraseOrigin << endl;
 
-
     // clear ：删除全部字符
     string stringClearOrigin = "chenyufeng";
     stringClearOrigin.clear();
     cout << "stringClearOrigin = " << stringClearOrigin << endl;
 
-
     // replace: 替换字符串,某个pos位置开始的size个字符替换成后面的“”字符串
     string stringReplaceOrigin = "chenyufeng";
     stringReplaceOrigin.replace(3, 2, "66");
     cout << "stringReplaceOrigin = " << stringReplaceOrigin << endl;
-
 
     // ==，<,>,<=,>=:比较字符串
     string stringLeft = "zhen";
@@ -84,12 +81,10 @@ int main(int argc, const char * argv[])
         cout << "stringLeft > stringRight" << endl;
     }
 
-
     // size(), length():计算字符串长度
     string stringCount = "chenyufeng";
     cout << "stringSize = " << stringCount.size() << endl;
     cout << "stringLength = " << stringCount.length() << endl;
-
 
     // empty():判断字符串是否为空
     string stringIsEmpty = "";
@@ -112,19 +107,15 @@ int main(int argc, const char * argv[])
         cout << "stringNotEmpty != empty" << endl;
     }
 
-
     // 输入输出stream
     cout << "请输入一个字符串"<<endl;
     string stringInput;
     cin >> stringInput;
     cout << "stringInput = " << stringInput << endl;
 
-
-
     // max_size:
     string stringMaxSize;
     cout << "stringMaxSize = " << stringMaxSize.max_size() << endl;
-
 
     // [],at() :元素存取
     string stringAt = "chenyufeng";
@@ -135,14 +126,12 @@ int main(int argc, const char * argv[])
     stringAt.at(5) = '9';
     cout << "stringAt = " << stringAt << endl;
 
-
     // compare()
     string stringCompare = "chenyufeng";
     int aaa = stringCompare.compare("chen"); // > 0
     int bbb = stringCompare.compare("chenyufeng"); // == 0
     int ccc = stringCompare.compare("done"); // < 0
     cout << "aaa = " << aaa << ";bbb = " << bbb << ";ccc = " << ccc << endl;
-
 
     // substr
     string stringSubstr = "chenyufeng";
@@ -155,36 +144,12 @@ int main(int argc, const char * argv[])
     // 整个字符
     cout << "stringSubstr.substr() = " <<stringSubstr.substr() << endl;
 
-
-
-
     // find
-
     string stringFind = "chenyufeng";
-    stringFind.find('n');
-    cout << "stringFind.find('n') = " << stringFind.find('n') << endl;
-
+    int index = (int)stringFind.find('n');
+    cout << "stringFind.find('n') = " << index << endl;
     cout << "stringFind.find_first_of('e') = " << stringFind.find_first_of('e') << endl;
-    
     cout << "stringFind.find_last_of('e') = " << stringFind.find_last_of('e') << endl;
-    
-    
-    
-    
-    
-    
+
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
